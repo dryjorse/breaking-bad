@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BrBad";
+  src: url("assets/fonts/Heart-Breaking-Bad.otf");
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+  body {
+    @apply font-brbad text-24 leading-[27px] bg-black text-white;
+  }
+  h2 {
+    @apply text-[72px];
+  }
+  ::-webkit-scrollbar {
+    @apply w-0;
+  }
+  .scroll::-webkit-scrollbar-thumb {
+    @apply bg-green rounded-[8px];
+  }
+  .scroll::-webkit-scrollbar {
+    @apply bg-white w-[1px];
+  }
+  .App {
+    overflow: hidden;
+  }
+}
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1340px];
+  }
+}
